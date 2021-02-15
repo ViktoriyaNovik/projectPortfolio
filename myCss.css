@@ -1,0 +1,197 @@
+body{
+    background: rgba(0, 0, 0, 0.1) url("https://i.pinimg.com/originals/2e/2a/de/2e2ade635441bd6bd6089029eb1777f8.jpg")no-repeat center / cover;
+    /*background: #8c8e9e url("https://images.unsplash.com/photo-1544731612-de7f96afe55f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80")no-repeat center / cover;*/
+    height: 100vh;
+    margin: 50px;
+    font-family: 'Satisfy', cursive;
+}
+.container__main{
+    min-height: 100vh;
+    background-color: rgba(41, 48, 96, 0.4);
+}
+.nav{
+    max-width: 240px;
+    margin-left: -4rem;
+    top: 50%;
+    left: -85px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.nav-link{
+    min-width: 250px;
+    color: #9a9db0;
+    border-radius: 25px;
+    box-shadow: 5px 10px 10px #5c636a;
+    transition: all .5s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link:hover{
+    color: #5c636a;
+    box-shadow: 5px 5px 5px #2c3034;
+    transform: translateX(150px);
+    justify-content: center;
+}
+.nav-link:hover .img_nav{
+    opacity: 0;
+}
+
+.svg-icon_nav{
+    fill:  #9a9db0;
+    width: 35px;
+    height: 45px;
+}
+.img_nav{
+    width: 30px;
+    height: auto;
+}
+.about-item{
+    border-radius: 62% 38% 56% 44% / 39% 64% 36% 61%;
+    width: 400px;
+    height: 400px;
+    transition: all .2s ease-in-out;
+    background-color: rgba(168, 168, 193, 0.7);
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    z-index: 1;
+}
+.about-item:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 380px;
+    background-color: rgba(168, 168, 193, 0.6);
+    border-radius: 72% 28% 41% 59% / 68% 38% 62% 32%;
+    transition: all .3s ease-in-out;
+    z-index: 3;
+}
+.img-face{
+    /*margin: 0 35px 0 auto;*/
+    display: block;
+    transition: all .5s ease-in-out;
+    position: relative;
+    z-index: 5;
+}
+.about-item:hover{
+    box-shadow: 5px 5px 20px #ffffff;
+    background-color: rgba(168, 168, 193, 0.8);
+}
+.about-item:hover:after{
+    box-shadow: 5px 5px 20px #ffffff;
+    background-color: rgba(168, 168, 193, 0.8);
+}
+.about-item:hover .img-face{
+    box-shadow: 5px 5px 20px #ffffff;
+}
+.title-h1{
+    /*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+    font-family: 'Marck Script', cursive;
+    font-size: 90px;
+}
+.row-shadow{
+    background-color: rgba(64, 67, 71, 0.8);
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    box-shadow: 5px 5px 5px #2c3034;
+    transition: all .4s ease-in-out;
+}
+.row-shadow:hover{
+    /*background-color: rgba(45, 64, 80, 0.8);*/
+    background-color: rgba(64, 67, 71, 1);
+    box-shadow: 10px 10px 10px #f2f2f2;
+}
+.svg-icon{
+    width: 35px;
+
+}
+.h2-number,
+.text-font{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.img-cover{
+    width: 100%;
+
+    object-position: center;
+}
+.border-start,
+.border-end{
+    height: 100%;
+}
+.project-link{
+    background-color: #f2f2f2;
+    /*padding: 2px 10px;*/
+    transition: all .4s ease-in-out;
+    width: 32%;
+    margin: 2rem auto 0;
+    cursor: pointer;
+}
+.link{
+    color: rgba(0, 0, 0, 0.7);
+}
+.project-link:hover .link{
+    color: #000000;
+}
+.svg-arrow{
+    transition: all .4s ease-in-out;
+    margin-left: 1rem;
+}
+.svg-icon{
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1rem;
+}
+.project-link:hover .svg-arrow{
+    transform: translateX(8px);
+}
+.project-link:hover{
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px #000000;
+}
+.row-project{
+    position: relative;
+    left: -35px;
+}
+
+.modal-content{
+    background: url("./img/bg-form.png") no-repeat center / cover ;
+}
+.footer-img{
+    width: 35%;
+    padding: 0;
+    box-shadow: 5px 5px 15px whitesmoke;
+}
+@media (max-width:  992px){
+    .row-project{
+        left: 50px;
+    }
+    .row-media{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .col-9-media{
+        width: 100%;
+    }
+    .col-3-media{
+        width: 95%;
+        margin-bottom: 2rem;
+    }
+    .col-3-media .text-end{
+        margin-left: 1.2rem;
+    }
+    .row-media-revers{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-cover {
+        height: auto;
+    }
+}
