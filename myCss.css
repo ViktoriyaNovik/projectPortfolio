@@ -164,7 +164,7 @@ body{
 .footer-img{
     width: 20%;
     padding: 0;
-    box-shadow: 5px 5px 15px whitesmoke;
+    box-shadow: 3px 3px 5px #131010;
 }
 @media (max-width:  992px){
     .row-project{
